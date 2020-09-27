@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+// VARIABLES
+$primary: #54b4eb;
+$secondary: #e9ecef;
+$danger: #e12b31;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1.5rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+.accordion {
+  &-item {
+    border-bottom: 1px solid rgba(221, 221, 221);
+    .header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 0.5rem 0;
+      cursor: pointer;
+      i {
+        color: #54b4eb;
+        transition: all 300ms ease;
+
+        &.is-expanded {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .content {
+      display: none;
+      &.is-expanded {
+        display: block;
+      }
+    }
+  }
+}
