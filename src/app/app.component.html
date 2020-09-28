@@ -1,6 +1,14 @@
 <app-toolbar [title]="'100 Angular Challenge'"></app-toolbar>
 <div class="container">
   <app-card
+    [title]="'Progress Bar'"
+    [subTitle]="'Components'"
+    [iconClass]="'fas fa-info-circle'"
+  >
+    <button body (click)="progressValue = 75">Update</button>
+    <app-progress-bar [value]="progressValue" footer></app-progress-bar>
+  </app-card>
+  <app-card
     [title]="'Accordion'"
     [subTitle]="'Components'"
     [iconClass]="'fas fa-info-circle'"

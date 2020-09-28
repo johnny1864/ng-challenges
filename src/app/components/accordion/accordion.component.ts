@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import AccordionItem from './accordion-item.interface';
+import { AccordionItem } from './accordion-item.interface';
 @Component({
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',

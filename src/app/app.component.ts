@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import AccordionItem from './components/accordion/accordion-item.interface';
+import { AccordionItem } from './components/accordion/accordion-item.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,8 @@ import AccordionItem from './components/accordion/accordion-item.interface';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'ng-challenges';
+  title: string = 'ng-challenges';
+  progressValue: number = 0;
   accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
@@ -20,4 +21,10 @@ export class AppComponent {
       isOpen: false,
     },
   ];
+  constructor() {
+    setTimeout(() => {
+      console.log('test');
+      this.progressValue = 25;
+    }, 1000);
+  }
 }
