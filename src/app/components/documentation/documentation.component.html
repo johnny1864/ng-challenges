@@ -1,0 +1,38 @@
+<app-card
+  [title]="'Credit Card Input'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+</app-card>
+<app-card
+  [title]="'Loader'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <p body><app-loader [isLoading]="false"></app-loader></p>
+</app-card>
+<app-card
+  [title]="'Progress Bar'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <button body (click)="progressValue = 75">Update</button>
+  <app-progress-bar [value]="progressValue" footer></app-progress-bar>
+</app-card>
+<app-card
+  [title]="'Accordion'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
+
+<app-card
+  [title]="'Card'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <p footer>footer Content</p>
+  <p body>Body Content</p>
+</app-card>
+<app-top-of-page></app-top-of-page>

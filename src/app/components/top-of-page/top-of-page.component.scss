@@ -1,0 +1,17 @@
+button {
+  position: fixed;
+  z-index: 2;
+  right: 3%;
+  bottom: 3%;
+  border-radius: 50%;
+  border: none;
+  background-color: #e12b31;
+  color: white;
+  transition: all 200ms ease;
+  visibility: hidden;
+  &.isShown {
+    visibility: visible;
+    padding: 1em;
+    font-size: 2rem;
+  }
+}
