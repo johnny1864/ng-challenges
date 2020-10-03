@@ -1,4 +1,16 @@
 <app-card
+  [title]="'Modal'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <app-modal body [title]="'Modal Header'" #modal> Some content </app-modal>
+
+  <div footer>
+    <button (click)="modal.open()">Open Modal</button>
+  </div>
+</app-card>
+
+<app-card
   [title]="'LinkedIn Post'"
   [subTitle]="'Components'"
   [iconClass]="'fas fa-info-circle'"
