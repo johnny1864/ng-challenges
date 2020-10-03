@@ -17,6 +17,8 @@ import { DirectivesDocumentationComponent } from './directives/directives-docume
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
     ServicesDocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
+    LinkedinPostComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
