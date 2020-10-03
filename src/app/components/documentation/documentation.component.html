@@ -3,6 +3,16 @@
   [subTitle]="'Components'"
   [iconClass]="'fas fa-info-circle'"
 >
+  <div body>
+    <app-credit-card-input
+      [creditCardNumber]="432143214321"
+      [isReadOnly]="false"
+    ></app-credit-card-input>
+    <app-credit-card-input
+      [creditCardNumber]="432143214321"
+      [isReadOnly]="true"
+    ></app-credit-card-input>
+  </div>
 </app-card>
 <app-card
   [title]="'Loader'"
