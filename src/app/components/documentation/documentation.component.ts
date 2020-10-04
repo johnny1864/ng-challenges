@@ -9,6 +9,7 @@ import { AccordionItem } from '../accordion/accordion-item.interface';
 export class DocumentationComponent implements OnInit {
   title: string = 'ng-challenges';
   progressValue: number = 0;
+  toggleValue: boolean = false;
   accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',

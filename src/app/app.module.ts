@@ -22,6 +22,7 @@ import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.
 import { ModalComponent } from './components/modal/modal.component';
 import { DebounceClickDirective } from './directives/debounce-click.directive';
 import { QuoteComponent } from './components/quote/quote.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { QuoteComponent } from './components/quote/quote.component';
     ModalComponent,
     DebounceClickDirective,
     QuoteComponent,
+    ToggleComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
