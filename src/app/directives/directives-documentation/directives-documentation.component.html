@@ -1,1 +1,10 @@
 <p>directives-documentation works!</p>
+<app-card
+  [title]="'Debounce'"
+  [subTitle]="'Directives'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <div body>
+    <button appDebounceClick (debounceClick)="log()">Log</button>
+  </div>
+</app-card>

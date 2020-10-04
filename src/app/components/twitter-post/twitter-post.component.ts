@@ -22,7 +22,6 @@ export class TwitterPostComponent implements OnInit {
   public get twitterUrl(): string {
     const base = this.getBaseWithHashTagsAndRoute();
     const message = encodeURIComponent('Check this out');
-    console.log(`Is this the title ${this.title.getTitle()}`);
     return `${base}${message}`;
   }
 

@@ -23,7 +23,6 @@ export class DocumentationComponent implements OnInit {
   ];
   constructor() {
     setTimeout(() => {
-      console.log('test');
       this.progressValue = 25;
     }, 1000);
   }

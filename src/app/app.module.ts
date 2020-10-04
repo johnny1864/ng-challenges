@@ -20,6 +20,7 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { DebounceClickDirective } from './directives/debounce-click.directive';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ModalComponent } from './components/modal/modal.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ModalComponent,
+    DebounceClickDirective,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],

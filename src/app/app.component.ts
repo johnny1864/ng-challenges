@@ -23,7 +23,6 @@ export class AppComponent {
   ];
   constructor() {
     setTimeout(() => {
-      console.log('test');
       this.progressValue = 25;
     }, 1000);
   }
