@@ -1,0 +1,29 @@
+blockquote {
+  padding: 1.5rem;
+  display: grid;
+  color: white;
+  background-color: #54b4eb;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1.2rem;
+
+  .quote {
+    margin-right: 25%;
+  }
+  i {
+    font-size: 2rem;
+  }
+
+  footer {
+    grid-column: 1/3;
+    justify-self: end;
+    text-align: right;
+    font-size: 1.2rem;
+    .author {
+      font-weight: bold;
+    }
+
+    .occupation {
+      font-style: italic;
+    }
+  }
+}

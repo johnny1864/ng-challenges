@@ -1,4 +1,17 @@
 <app-card
+  [title]="'Quote'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <app-quote
+    body
+    [quote]="'Get Good. Get Great. Get Better.'"
+    [author]="'Johnny'"
+    [occupation]="'Web Developer'"
+  ></app-quote>
+</app-card>
+
+<app-card
   [title]="'Modal'"
   [subTitle]="'Components'"
   [iconClass]="'fas fa-info-circle'"
