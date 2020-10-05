@@ -23,6 +23,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { DebounceClickDirective } from './directives/debounce-click.directive';
 import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
+import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
     DebounceClickDirective,
     QuoteComponent,
     ToggleComponent,
+    RichTextViewerComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
