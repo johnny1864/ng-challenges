@@ -1,3 +1,11 @@
+<h1>Pipes</h1>
+<app-card
+  [title]="'Filter Term'"
+  [subTitle]="'Pipes'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  {{ ["hello", "world", "hello world"] | filterTerm: "world" }}
+</app-card>
 <app-card
   [title]="'Flatten'"
   [subTitle]="'Pipes'"

@@ -6,6 +6,7 @@ import { PIPES_ROUTES } from './pipes.routes';
 import { CreditCardFormatterPipe } from './credit-card-formatter.pipe';
 import { TruncatePipe } from './truncate.pipe';
 import { FlattenPipe } from './flatten.pipe';
+import { FilterTermPipe } from './filter-term.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FlattenPipe } from './flatten.pipe';
     CreditCardFormatterPipe,
     TruncatePipe,
     FlattenPipe,
+    FilterTermPipe,
   ],
   exports: [PipesDocumentationComponent],
   imports: [CommonModule, RouterModule.forChild(PIPES_ROUTES)],
