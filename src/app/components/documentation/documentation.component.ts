@@ -28,4 +28,8 @@ export class DocumentationComponent implements OnInit {
     }, 1000);
   }
   ngOnInit(): void {}
+
+  public debounceExample(value: string): void {
+    console.log('Component Documention ' + value);
+  }
 }

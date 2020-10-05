@@ -1,5 +1,16 @@
 <h1>Components</h1>
 <app-card
+  [title]="'Debounce Search'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <app-debounce-search
+    (searchUpdate)="debounceExample($event)"
+    [placeholder]="'placeholder'"
+    body
+  ></app-debounce-search>
+</app-card>
+<app-card
   [title]="'Rich Text Viewer'"
   [subTitle]="'Components'"
   [iconClass]="'fas fa-info-circle'"

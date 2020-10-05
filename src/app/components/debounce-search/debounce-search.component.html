@@ -1,0 +1,7 @@
+<p>Enter Seach:</p>
+<input
+  placeholder="{{ placeholder }}"
+  type="search"
+  [(ngModel)]="searchTerm"
+  (ngModelChange)="updateSearchTerm($event)"
+/>
