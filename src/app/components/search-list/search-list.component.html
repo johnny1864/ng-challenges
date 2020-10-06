@@ -1,0 +1,11 @@
+<div class="search-list">
+  <app-debounce-search
+    [searchTerm]="searchTerm"
+    (searchUpdate)="updateSearchTerm($event)"
+  ></app-debounce-search>
+  <ul class="search-items">
+    <li *ngFor="let item of items" class="search-item">
+      {{ item }}
+    </li>
+  </ul>
+</div>

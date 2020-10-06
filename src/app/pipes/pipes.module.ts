@@ -16,7 +16,13 @@ import { FilterTermPipe } from './filter-term.pipe';
     FlattenPipe,
     FilterTermPipe,
   ],
-  exports: [PipesDocumentationComponent],
+  exports: [
+    PipesDocumentationComponent,
+    CreditCardFormatterPipe,
+    TruncatePipe,
+    FlattenPipe,
+    FilterTermPipe,
+  ],
   imports: [CommonModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}

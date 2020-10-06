@@ -16,7 +16,7 @@ import { distinctUntilChanged } from 'rxjs/operators';
   styleUrls: ['./debounce-search.component.scss'],
 })
 export class DebounceSearchComponent implements OnInit, OnDestroy {
-  public searchTerm: string = '';
+  @Input() public searchTerm: string = '';
   @Input() public placeholder = '';
   @Output() public searchUpdate = new EventEmitter<string>();
   private searchUpdate$ = new Subject<string>();
