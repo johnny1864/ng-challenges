@@ -6,7 +6,11 @@ import { PipesDocumentationComponent } from './pipes/pipes-documentation/pipes-d
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
 
 export const APP_ROUTES: Routes = [
-  { path: '', component: DocumentationComponent },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./components/components.module').then((m) => m.ComponentsModule),
+  },
   { path: 'directives', component: DirectivesDocumentationComponent },
   {
     path: 'pipes',
