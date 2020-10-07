@@ -20,6 +20,7 @@ import { COMPONENTS_ROUTES } from './components.routes';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CounterInputComponent } from './counter-input/counter-input.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CounterInputComponent } from './counter-input/counter-input.component';
     DebounceSearchComponent,
     SearchListComponent,
     CounterInputComponent,
+    TableComponent,
   ],
   imports: [
     CommonModule,

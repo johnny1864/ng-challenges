@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    th {
+      text-transform: uppercase;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+  tbody {
+    tr {
+      transition: all 300ms ease;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+
+    td {
+      text-align: center;
+    }
+  }
+}
