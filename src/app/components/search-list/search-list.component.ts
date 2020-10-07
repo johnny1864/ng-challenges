@@ -16,6 +16,11 @@ export class SearchListComponent implements OnInit {
 
   public updateSearchTerm(value: string): void {
     this.searchTerm = value;
+    this.hasBeenSelected = false;
+  }
+
+  public selectSearchTerm(value: string) {
+    this.searchTerm = value;
     this.hasBeenSelected = true;
   }
 }
