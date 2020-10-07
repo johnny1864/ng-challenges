@@ -19,6 +19,7 @@ import { RouterModule } from '@angular/router';
 import { COMPONENTS_ROUTES } from './components.routes';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CounterInputComponent } from './counter-input/counter-input.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RichTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterInputComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,29 @@
+@import "src/styles";
+
+.counter {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input {
+    padding: 0.5rem 0.75rem;
+  }
+
+  button {
+    padding: 0.5rem 0.75rem;
+    color: #fff;
+
+    &.decrement {
+      background-color: $danger;
+    }
+
+    &.increment {
+      background-color: $primary;
+    }
+  }
+}
