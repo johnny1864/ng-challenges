@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CardComponent } from './card/card.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
@@ -18,10 +17,11 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
 import { SearchListComponent } from './search-list/search-list.component';
 import { RouterModule } from '@angular/router';
 import { COMPONENTS_ROUTES } from './components.routes';
+import { SharedModule } from '../shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    CardComponent,
     AccordionComponent,
     ProgressBarComponent,
     TopOfPageComponent,
@@ -37,6 +37,12 @@ import { COMPONENTS_ROUTES } from './components.routes';
     DebounceSearchComponent,
     SearchListComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(COMPONENTS_ROUTES)],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(COMPONENTS_ROUTES),
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class ComponentsModule {}
