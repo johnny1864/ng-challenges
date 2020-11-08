@@ -21,6 +21,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CounterInputComponent } from './counter-input/counter-input.component';
 import { TableComponent } from './table/table.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { TableComponent } from './table/table.component';
     SearchListComponent,
     CounterInputComponent,
     TableComponent,
+    TabsComponent,
   ],
   imports: [
     CommonModule,

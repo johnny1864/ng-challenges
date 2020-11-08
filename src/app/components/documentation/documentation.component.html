@@ -1,6 +1,26 @@
 <h1>Components</h1>
 
 <app-card
+  [title]="'Tabs'"
+  [subTitle]="'Components'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <app-tabs body [tabs]="tabs">
+    <app-quote
+      *ngIf="selectedTab === 0"
+      [quote]="'Get Good. Get Great. Get Better.'"
+      [author]="'Johnny'"
+      [occupation]="'Web Developer'"
+    ></app-quote>
+
+    <app-search-list
+      *ngIf="selectedTab === 1"
+      [items]="['United State', 'Mexico', 'England', 'United Arab Emirates']"
+    ></app-search-list>
+  </app-tabs>
+</app-card>
+
+<app-card
   [title]="'Table'"
   [subTitle]="'Components'"
   [iconClass]="'fas fa-info-circle'"

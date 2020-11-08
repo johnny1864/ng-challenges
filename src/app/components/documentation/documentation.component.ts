@@ -22,11 +22,19 @@ export class DocumentationComponent implements OnInit {
       isOpen: false,
     },
   ];
+  tabs = [
+    {title: 'Tab 1', active: true},
+    {title: 'Tab 2', active: false}
+  ];
+  public selectedTab = 0;
   constructor() {
     setTimeout(() => {
       this.progressValue = 25;
     }, 1000);
   }
+
+  
+
   ngOnInit(): void {}
 
   public debounceExample(value: string): void {
