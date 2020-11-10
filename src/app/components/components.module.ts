@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CounterInputComponent } from './counter-input/counter-input.component';
 import { TableComponent } from './table/table.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TabsComponent } from './tabs/tabs.component';
     CounterInputComponent,
     TableComponent,
     TabsComponent,
+    PaginationComponent,
   ],
   imports: [
     CommonModule,
