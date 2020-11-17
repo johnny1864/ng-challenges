@@ -1,1 +1,21 @@
-<p>services-documentation works!</p>
+<h1>Services</h1>
+
+<app-card
+  [title]="'Active Route'"
+  [subTitle]="'Services'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <div body>
+    <button class="button btn" routerLink="./3">Change route</button>
+  </div>
+</app-card>
+
+<app-card
+  [title]="'User Service'"
+  [subTitle]="'Services'"
+  [iconClass]="'fas fa-info-circle'"
+>
+  <div body>
+    <p>{{ user | json }}</p>
+  </div>
+</app-card>
