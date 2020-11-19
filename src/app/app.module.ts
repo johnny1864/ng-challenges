@@ -12,6 +12,7 @@ import { ServicesDocumentationComponent } from './services/services-documentatio
 import { DirectivesDocumentationComponent } from './directives/directives-documentation/directives-documentation.component';
 import { SharedModule } from './shared/shared.module';
 import { RippleDirective } from './directives/ripple.directive';
+import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { RippleDirective } from './directives/ripple.directive';
     ServicesDocumentationComponent,
     DirectivesDocumentationComponent,
     RippleDirective,
+    OtherDocumentationComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES), SharedModule],
   providers: [],

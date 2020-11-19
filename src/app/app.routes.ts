@@ -17,5 +17,12 @@ export const APP_ROUTES: Routes = [
     loadChildren: () =>
       import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
-  { path: 'services', loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) },
+  { 
+    path: 'services', 
+  loadChildren: () => import('./services/services.module').then(m => m.ServicesModule) 
+},
+  {
+    path: 'other',
+    loadChildren: () => import('./other/other.module').then(m => m.OtherModule)
+  }
 ];
