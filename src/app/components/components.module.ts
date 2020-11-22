@@ -23,6 +23,7 @@ import { CounterInputComponent } from './counter-input/counter-input.component';
 import { TableComponent } from './table/table.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { SortTableComponent } from './sort-table/sort-table.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { PaginationComponent } from './pagination/pagination.component';
     TableComponent,
     TabsComponent,
     PaginationComponent,
+    SortTableComponent,
   ],
   imports: [
     CommonModule,
